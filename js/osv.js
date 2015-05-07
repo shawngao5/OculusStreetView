@@ -128,6 +128,10 @@ function initControls() {
         $('#depth').prop('checked', USE_DEPTH);
         setSphereGeometry();
         break;
+      case 0: // Just for mojing key to step forward
+        console.log("Mojing")
+        moveToNextPlace();
+        break;
     }
   });
 
